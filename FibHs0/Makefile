@@ -1,5 +1,5 @@
 PROG := FibHs
-HSLIB := Foo
+HSLIB := Fib
 CMAIN := CMain
 
 all: ${PROG}
