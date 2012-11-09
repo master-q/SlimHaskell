@@ -4,13 +4,13 @@ CMAIN := CMain
 
 all: ${PROG}
 ${PROG}: ${CMAIN}.o ${HSLIB}.o
-	ghc -no-hs-main ${CMAIN}.o ${HSLIB}.o -o ${PROG}
+	ghc -no-hs-main $^ -o ${PROG}
 
 ${CMAIN}.o: ${CMAIN}.c
-	gcc -I/usr/lib/ghc/include -c ${CMAIN}.c
+	gcc -I/usr/lib/ghc/include -c $<
 
 ${HSLIB}.o: ${HSLIB}.hs
-	ghc -c ${HSLIB}.hs
+	ghc -c $<
 
 clean:
 	rm -f ${PROG} *.o *.hi *_stub.h *~
