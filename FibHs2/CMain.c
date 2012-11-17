@@ -25,3 +25,6 @@ void shutdownHaskellAndSignal(int sig) {}
 void initTimer(void) {}
 void startTimer(void) {}
 void stopTimer(void) {}
+int performHeapProfile;
+void stopHeapProfTimer(void) {}
+void startHeapProfTimer(void) {}
