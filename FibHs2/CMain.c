@@ -39,3 +39,4 @@ void stat_endGC(void *cap, void *gct, size_t alloc, size_t live,
 void stat_exit(int alloc) {}
 int lockFile(int fd, long long int dev, long long int ino, int for_writing) {}
 int unlockFile(int fd) {return 0;}
+void StackOverflowHook(size_t stack_size) {}
