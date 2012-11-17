@@ -17,7 +17,7 @@ int main(int argc, char *argv[])
 	return 0;
 }
 
-/* dummy */
+/* dummy for rts */
 void stg_exit(int n) {}
 void hs_exit(void) {}
 void shutdownHaskell(void) {}
@@ -64,3 +64,4 @@ void __int_encodeDouble(void) {}
 void *saved_termios = NULL;
 void *__hscore_get_saved_termios(int fd) {return saved_termios;}
 void __hscore_set_saved_termios(int fd, void* ts) {saved_termios = ts;}
+void threadPaused(void *cap, void *tso) {}
