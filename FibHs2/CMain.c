@@ -22,3 +22,6 @@ void hs_exit(void) {}
 void shutdownHaskell(void) {}
 void shutdownHaskellAndExit(int n) {}
 void shutdownHaskellAndSignal(int sig) {}
+void initTimer(void) {}
+void startTimer(void) {}
+void stopTimer(void) {}
