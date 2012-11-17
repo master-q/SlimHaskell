@@ -31,3 +31,4 @@ void startHeapProfTimer(void) {}
 void awaitEvent(int wait) {}
 int getDelayTarget (int us) {usleep(us); return 0;}
 void heapCensus (double t) {}
+void ffi_call(void *cif, void (*fn)(), void *rvalue, void **avalue) {}
