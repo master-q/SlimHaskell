@@ -13,7 +13,10 @@ ${CMAIN}.o: ${CMAIN}.c
 ${HSLIB}.o: ${HSLIB}.hs
 	${GHC} -O2 -c $<
 
+${HSLIB}.cmm: ${HSLIB}.hs
+	${GHC} -O2 -ddump-cmm -c $< > $@
+
 clean:
-	rm -f ${PROG} *.o *.hi *_stub.h *~
+	rm -f ${PROG} *.o *.hi *_stub.h *~ *.cmm
 
 .PHONY: clean
