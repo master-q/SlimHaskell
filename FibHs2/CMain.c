@@ -43,3 +43,5 @@ void StackOverflowHook(size_t stack_size) {}
 int rts_stop_on_exception = 0;
 void *rts_breakpoint_io_action;
 void *interpretBCO(void* cap) {return cap;}
+void MallocFailHook(size_t request_size, char *msg) {}
+int getNumberOfProcessors(void) {return 1;}
