@@ -61,3 +61,6 @@ void __decodeDouble_2Int(void *mp_tmp1, void *mp_tmp2, void *mp_result1,
     void *mp_result2, double arg) {}
 void __int_encodeFloat(void) {}
 void __int_encodeDouble(void) {}
+void *saved_termios = NULL;
+void *__hscore_get_saved_termios(int fd) {return saved_termios;}
+void __hscore_set_saved_termios(int fd, void* ts) {saved_termios = ts;}
