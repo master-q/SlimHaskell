@@ -37,3 +37,5 @@ void stat_endGC(void *cap, void *gct, size_t alloc, size_t live,
     size_t copied, size_t slop, int gen, int par_n_threads,
     size_t par_max_copied, size_t par_tot_copied) {}
 void stat_exit(int alloc) {}
+int lockFile(int fd, long long int dev, long long int ino, int for_writing) {}
+int unlockFile(int fd) {return 0;}
