@@ -30,3 +30,4 @@ void stopHeapProfTimer(void) {}
 void startHeapProfTimer(void) {}
 void awaitEvent(int wait) {}
 int getDelayTarget (int us) {usleep(us);}
+void heapCensus (double t) {}
