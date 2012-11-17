@@ -55,3 +55,4 @@ void debugBelch(const char*s, ...) {}
 int stg_sig_install(int sig, int spi, void* mask) {return SIG_DFL;}
 void setIOManagerWakeupFd(int fd) {}
 void setIOManagerControlFd(int fd) {}
+int newSpark(void *reg, void *p) {return 1;}
