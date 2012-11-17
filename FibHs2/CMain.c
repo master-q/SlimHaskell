@@ -29,5 +29,5 @@ int performHeapProfile;
 void stopHeapProfTimer(void) {}
 void startHeapProfTimer(void) {}
 void awaitEvent(int wait) {}
-int getDelayTarget (int us) {usleep(us);}
+int getDelayTarget (int us) {usleep(us); return 0;}
 void heapCensus (double t) {}
