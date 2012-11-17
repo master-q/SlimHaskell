@@ -8,10 +8,17 @@ int main(int argc, char *argv[])
 {
 	int i;
 
-	hs_init(&argc, &argv);
+	hs_init_slim(&argc, &argv);
 	for (i = 0; i < 30; i++) {
 		printf("%d\n", fib(i));
 	}
-	hs_exit();
+/*	hs_exit(); */
 	return 0;
 }
+
+/* dummy */
+void stg_exit(int n) {}
+void hs_exit(void) {}
+void shutdownHaskell(void) {}
+void shutdownHaskellAndExit(int n) {}
+void shutdownHaskellAndSignal(int sig) {}
