@@ -45,3 +45,4 @@ void *rts_breakpoint_io_action;
 void *interpretBCO(void* cap) {return cap;}
 void MallocFailHook(size_t request_size, char *msg) {}
 int getNumberOfProcessors(void) {return 1;}
+void OutOfHeapHook(size_t request_size, size_t heap_size) {}
