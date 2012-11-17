@@ -56,3 +56,8 @@ int stg_sig_install(int sig, int spi, void* mask) {return SIG_DFL;}
 void setIOManagerWakeupFd(int fd) {}
 void setIOManagerControlFd(int fd) {}
 int newSpark(void *reg, void *p) {return 1;}
+void __decodeFloat_Int(void *mp_tmp1, void *mp_tmp_w, float arg) {}
+void __decodeDouble_2Int(void *mp_tmp1, void *mp_tmp2, void *mp_result1,
+    void *mp_result2, double arg) {}
+void __int_encodeFloat(void) {}
+void __int_encodeDouble(void) {}
