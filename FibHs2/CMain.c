@@ -40,3 +40,6 @@ void stat_exit(int alloc) {}
 int lockFile(int fd, long long int dev, long long int ino, int for_writing) {}
 int unlockFile(int fd) {return 0;}
 void StackOverflowHook(size_t stack_size) {}
+int rts_stop_on_exception = 0;
+void *rts_breakpoint_io_action;
+void *interpretBCO(void* cap) {return cap;}
