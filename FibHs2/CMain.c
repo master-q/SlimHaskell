@@ -1,4 +1,5 @@
 #include <stdio.h>
+#include <signal.h>
 #include "HsFFI.h"
 #ifdef __GLASGOW_HASKELL__
 #include "Fib_stub.h"
@@ -51,3 +52,6 @@ void errorBelch(const char*s, ...) {}
 void vdebugBelch(const char*s, va_list ap) {}
 void sysErrorBelch(const char*s, ...) {}
 void debugBelch(const char*s, ...) {}
+int stg_sig_install(int sig, int spi, void* mask) {return SIG_DFL;}
+void setIOManagerWakeupFd(int fd) {}
+void setIOManagerControlFd(int fd) {}
