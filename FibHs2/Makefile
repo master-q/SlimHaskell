@@ -28,5 +28,6 @@ ${HSLIB}.cmm: ${HSLIB}.hs
 
 clean:
 	rm -f ${PROG} *.o *.hi *_stub.h *~ *.cmm
+	rm -rf rts
 
 .PHONY: clean
