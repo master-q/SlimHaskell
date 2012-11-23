@@ -8,7 +8,7 @@ ${PROG}: ${CMAIN}.o ${HSLIB}.o
 	${GHC} -O2 -no-hs-main $^ -o ${PROG}
 
 ${CMAIN}.o: ${CMAIN}.c
-	gcc -O2 -I/usr/lib/ghc/include -c $<
+	gcc -O2 -I/usr/local/ghc7.6.1/lib/ghc-7.6.1/include -c $<
 
 ${HSLIB}.o: ${HSLIB}.hs
 	${GHC} -O2 -c $<
