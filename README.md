@@ -23,6 +23,14 @@ libHSrts.aライブラリの中で必須と思われるオブジェクトファ�
 
 FibHs3
 ------
+baseパッケージからFloat関連を削除。
+libmとlibrtにリンクしないようになった。
+
+FibHs4
+------
+
+FibHsXXX
+--------
 fib関数をreturn 0にしてみて、baseパッケージの何を使っているのか探ってみた。
 Fib.oはbase_GHCziInt_I32zh_static_infoとbase_GHCziTopHandler_runIO_closureを
 使うようだ。
