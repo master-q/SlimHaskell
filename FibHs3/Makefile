@@ -17,7 +17,7 @@ ${PROG}: ${CMAIN}.o ${HSLIB}.o ${OBJ_RTS} ${OBJ_BASE}
 	gcc ${LINK_OPT} -o $@ $^ ${LINK_DIR} ${LINK_LIB_HS} ${LINK_LIB_C} ${UNSYM_NEED}
 
 ${CMAIN}.o: ${CMAIN}.c
-	gcc -O2 -I/usr/local/ghc7.6.1/lib/ghc-7.6.1/include -c $<
+	gcc -O2 -I${GHCDIR}/lib/ghc-7.6.1/include -c $<
 
 ${HSLIB}.o: ${HSLIB}.hs
 	${GHC} -O2 -c $<
