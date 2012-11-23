@@ -1,4 +1,4 @@
-GHC := /usr/local/ghc7.6.1/bin/ghc
+GHC := /usr/local/ghc7.6.1.orig/bin/ghc
 PROG := FibHs
 HSLIB := Fib
 CMAIN := CMain
