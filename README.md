@@ -24,10 +24,18 @@ libHSrts.aライブラリの中で必須と思われるオブジェクトファ�
 FibHs3
 ------
 baseパッケージからFloat関連を削除。
-libmとlibrtにリンクしないようになった。
+libm,librt,libpthreadにリンクしないようになった。
 
 FibHs4
 ------
+integer-gmpを
+[なんちゃってライブラリ](https://gitorious.org/metasepi/integer-fake)
+で置き換えた。
+libgmpにリンクしないようになった。
+
+FibHs5
+------
+
 
 FibHsXXX
 --------
