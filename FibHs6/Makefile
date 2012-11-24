@@ -24,7 +24,7 @@ ${HSLIB}.o: ${HSLIB}.hs
 
 ${OBJ_RTS}: ${GHCDIR}/lib/ghc-7.6.1/libHSrts.a
 	mkdir -p rts
-	cd rts/ && ar x $<
+	cd rts/ && ar x $< $@
 
 ${HSLIB}.cmm: ${HSLIB}.hs
 	${GHC} -O2 -ddump-cmm -c $< > $@
