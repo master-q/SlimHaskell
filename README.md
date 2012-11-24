@@ -25,6 +25,9 @@ FibHs3
 ------
 baseパッケージからFloat関連を削除。
 libm,librt,libpthreadにリンクしないようになった。
+このソースは
+[ghc-base-arafuraのfeature/slimhaskellブランチ](https://gitorious.org/metasepi/ghc-base-arafura/commits/feature/slimhaskell)
+がないとコンパイルできない。
 
 FibHs4
 ------
@@ -34,6 +37,11 @@ integer-gmpを
 libgmpにリンクしないようになった。
 
 FibHs5
+------
+baseパッケージから必須と思われるオブジェクトファイルだけを取り出してリンクするようにした。
+かなりサイズ小さくなった。
+
+FibHs6
 ------
 
 
