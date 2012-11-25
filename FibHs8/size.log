@@ -11,7 +11,7 @@
     157	      0	      0	    157	     9d	rts/HsFFI.o
     275	      0	      0	    275	    113	rts/Sweep.o
     317	     16	      0	    333	    14d	Mem.o (ex libHSbase-4.6.0.0.a)
-    374	      0	      0	    374	    176	rts/RtsStartupSlim.o
+    366	      0	      0	    366	    16e	rts/RtsStartupSlim.o
     525	      0	      0	    525	    20d	rts/Updates.o
     552	      0	      0	    552	    228	rts/GCAux.o
     523	      0	     48	    571	    23b	rts/Globals.o
@@ -65,9 +65,9 @@
    3857	    536	      0	   4393	   1129	Num.o (ex libHSbase-4.6.0.0.a)
    3965	    488	      0	   4453	   1165	TopHandler.o (ex libHSbase-4.6.0.0.a)
    4522	    128	      0	   4650	   122a	Tuple.o (ex libHSghc-prim-0.3.0.0.a)
+   4561	    872	     60	   5493	   1575	rts/RtsFlags.o
    5678	      0	      0	   5678	   162e	rts/HeapStackCheck.o
    5707	      0	      8	   5715	   1653	rts/STM.o
-   4849	    488	    440	   5777	   1691	rts/RtsFlags.o
    5479	    864	      0	   6343	   18c7	Encoding.o (ex libHSbase-4.6.0.0.a)
    6356	      0	     64	   6420	   1914	rts/Storage.o
    6426	      0	    192	   6618	   19da	rts/Schedule.o
