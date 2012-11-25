@@ -76,6 +76,9 @@ $ nm FibHs|sort|head -25
 00000000004007f8 T _init
 0000000000400950 T main
 
+FibHs7
+------
+
 
 FibHsXXX
 --------
