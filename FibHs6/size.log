@@ -1,101 +1,43 @@
-$ size /usr/local/ghc7.6.1/lib/ghc-7.6.1/ghc-prim-0.3.0.0/libHSghc-prim-0.3.0.0.a *.a rts/* | sort -k 4
       0	      0	      0	      0	      0	Bool.o (ex libHSbase-4.6.0.0.a)
       0	      0	      0	      0	      0	IntWord64.o (ex /usr/local/ghc7.6.1/lib/ghc-7.6.1/ghc-prim-0.3.0.0/libHSghc-prim-0.3.0.0.a)
       0	      0	      0	      0	      0	Integer.o (ex libHSinteger-gmp-0.5.0.0.a)
       0	      0	      0	      0	      0	Word.o (ex libHSbase-4.6.0.0.a)
       0	      0	      0	      0	      0	longlong.o (ex /usr/local/ghc7.6.1/lib/ghc-7.6.1/ghc-prim-0.3.0.0/libHSghc-prim-0.3.0.0.a)
-      0	      0	      0	      0	      0	rts/0Hash.o
-      0	      0	      0	      0	      0	rts/0Unpack.o
-      0	      0	      0	      0	      0	rts/Disassembler.o
-      0	      0	      0	      0	      0	rts/Dist.o
-      0	      0	      0	      0	      0	rts/EventLog.o
-      0	      0	      0	      0	      0	rts/FrontPanel.o
-      0	      0	      0	      0	      0	rts/Global.o
-      0	      0	      0	      0	      0	rts/GranSim.o
-      0	      0	      0	      0	      0	rts/HLComms.o
-      0	      0	      0	      0	      0	rts/LLComms.o
-      0	      0	      0	      0	      0	rts/LdvProfile.o
-      0	      0	      0	      0	      0	rts/OldARMAtomic.o
-      0	      0	      0	      0	      0	rts/Pack.o
-      0	      0	      0	      0	      0	rts/Papi.o
-      0	      0	      0	      0	      0	rts/ParInit.o
-      0	      0	      0	      0	      0	rts/ParTicky.o
-      0	      0	      0	      0	      0	rts/Parallel.o
-      0	      0	      0	      0	      0	rts/ParallelDebug.o
-      0	      0	      0	      0	      0	rts/Profiling.o
-      0	      0	      0	      0	      0	rts/RBH.o
-      0	      0	      0	      0	      0	rts/RetainerProfile.o
-      0	      0	      0	      0	      0	rts/RetainerSet.o
-      0	      0	      0	      0	      0	rts/RtsDllMain.o
-      0	      0	      0	      0	      0	rts/Sanity.o
-      0	      0	      0	      0	      0	rts/Trace.o
-      0	      0	      0	      0	      0	rts/ffi.o
-      0	      0	      0	      0	      0	rts/sysv.o
      32	      8	      0	     40	     28	Magic.o (ex /usr/local/ghc7.6.1/lib/ghc-7.6.1/ghc-prim-0.3.0.0/libHSghc-prim-0.3.0.0.a)
-     50	      0	      0	     50	     32	rts/FlagDefaults.o
-     50	      0	      0	     50	     32	rts/OnExit.o
-     50	      0	      0	     50	     32	rts/ThreadLabels.o
-     54	      0	      0	     54	     36	rts/Sparks.o
-     86	      0	      0	     86	     56	rts/OSThreads.o
      98	      8	      0	    106	     6a	Prelude.o (ex libHSbase-4.6.0.0.a)
-    114	      0	      0	    114	     72	rts/GetEnv.o
       0	    122	      0	    122	     7a	rts/ClosureFlags.o
     124	      0	      0	    124	     7c	debug.o (ex /usr/local/ghc7.6.1/lib/ghc-7.6.1/ghc-prim-0.3.0.0/libHSghc-prim-0.3.0.0.a)
-    127	      0	      0	    127	     7f	rts/MallocFail.o
     135	      0	      0	    135	     87	rts/StgCRun.o
-    156	      0	      0	    156	     9c	rts/StackOverflow.o
     157	      0	      0	    157	     9d	rts/HsFFI.o
-    206	      0	      0	    206	     ce	rts/OutOfHeap.o
-    255	      0	     16	    271	    10f	rts/Proftimer.o
     275	      0	      0	    275	    113	rts/Sweep.o
-    278	      0	     24	    302	    12e	rts/TTY.o
     317	     16	      0	    333	    14d	Mem.o (ex libHSbase-4.6.0.0.a)
-    373	      0	     12	    385	    181	rts/Timer.o
-    365	      8	     16	    389	    185	rts/Signals.o
-    391	      0	      0	    391	    187	rts/RtsStartupSlim.o
-    408	      0	      0	    408	    198	rts/types.o
-    513	      0	      8	    521	    209	rts/Arena.o
+    374	      0	      0	    374	    176	rts/RtsStartupSlim.o
     525	      0	      0	    525	    20d	rts/Updates.o
-    484	      0	     48	    532	    214	rts/RtsMain.o
     552	      0	      0	    552	    228	rts/GCAux.o
     523	      0	     48	    571	    23b	rts/Globals.o
     599	      0	      0	    599	    257	rts/Adjustor.o
-    627	      8	      8	    643	    283	rts/Itimer.o
     572	     72	      0	    644	    284	Char.o (ex libHSbase-4.6.0.0.a)
     600	     96	      0	    696	    2b8	IORef.o (ex libHSbase-4.6.0.0.a)
+    695	      0	      8	    703	    2bf	rts/OSMem.o
     669	     48	      0	    717	    2cd	Weak.o (ex libHSbase-4.6.0.0.a)
     724	      0	      8	    732	    2dc	rts/Weak.o
     733	      0	      0	    733	    2dd	rts/WSDeque.o
     759	      0	      0	    759	    2f7	popcnt.o (ex /usr/local/ghc7.6.1/lib/ghc-7.6.1/ghc-prim-0.3.0.0/libHSghc-prim-0.3.0.0.a)
-    776	      0	      0	    776	    308	rts/unix64.o
-    805	      0	     16	    821	    335	rts/FileLock.o
-    811	      0	     16	    827	    33b	rts/GetTime.o
     869	     48	      0	    917	    395	Debug.o (ex /usr/local/ghc7.6.1/lib/ghc-7.6.1/ghc-prim-0.3.0.0/libHSghc-prim-0.3.0.0.a)
-      5	     64	    848	    917	    395	rts/Ticky.o
     936	      0	      0	    936	    3a8	rts/GCUtils.o
    text	   data	    bss	    dec	    hex	filename
-   1045	      0	      0	   1045	    415	rts/prep_cif.o
-   1062	      0	      0	   1062	    426	rts/StgPrimFloat.o
    1036	      0	     28	   1064	    428	rts/MarkWeak.o
-   1084	      0	      8	   1092	    444	rts/OSMem.o
    1035	    104	      0	   1139	    473	STRef.o (ex libHSbase-4.6.0.0.a)
    1146	      0	      0	   1146	    47a	rts/Messages.o
    1190	      0	      0	   1190	    4a6	rts/StgStartup.o
-   1259	      0	     12	   1271	    4f7	rts/RtsStartup.o
    1252	      0	     36	   1288	    508	rts/Task.o
    1254	     56	      0	   1310	    51e	Pack.o (ex libHSbase-4.6.0.0.a)
-    959	    488	      0	   1447	    5a7	rts/Printer.o
-   1462	      0	      0	   1462	    5b6	rts/raw_api.o
    1344	    120	      0	   1464	    5b8	Stable.o (ex libHSbase-4.6.0.0.a)
    1429	    104	      0	   1533	    5fd	Exception.o (ex libHSbase-4.6.0.0.a)
    1242	    304	      0	   1546	    60a	Err.o (ex libHSbase-4.6.0.0.a)
-   1561	      0	      0	   1561	    619	rts/ThreadPaused.o
-   1584	      0	      0	   1584	    630	rts/java_raw_api.o
    1213	      0	    448	   1661	    67d	rts/Capability.o
    1709	     96	      0	   1805	    70d	IORef.o (ex libHSbase-4.6.0.0.a)
-   1809	      0	      0	   1809	    711	rts/Select.o
    1692	    144	      0	   1836	    72c	Types.o (ex /usr/local/ghc7.6.1/lib/ghc-7.6.1/ghc-prim-0.3.0.0/libHSghc-prim-0.3.0.0.a)
-   1886	     32	      0	   1918	    77e	rts/RtsMessages.o
    1604	    344	      0	   1948	    79c	StableName.o (ex libHSbase-4.6.0.0.a)
    1929	      0	     32	   1961	    7a9	rts/Stable.o
    2269	      0	      0	   2269	    8dd	rts/Hash.o
@@ -108,9 +50,7 @@ $ size /usr/local/ghc7.6.1/lib/ghc-7.6.1/ghc-prim-0.3.0.0/libHSghc-prim-0.3.0.0.
    2677	      8	      0	   2685	    a7d	rts/Exception.o
    2628	    208	      0	   2836	    b14	Type.o (ex libHSbase-4.6.0.0.a)
    2903	      0	      0	   2903	    b57	md5.o (ex libHSbase-4.6.0.0.a)
-   2957	      0	     44	   3001	    bb9	rts/Hpc.o
-   3148	      0	     42	   3190	    c76	rts/RtsUtils.o
-   3158	      0	     40	   3198	    c7e	rts/ProfHeap.o
+   2996	      0	      8	   3004	    bbc	rts/RtsUtils.o
    3251	      4	      0	   3255	    cb7	rts/Threads.o
    3225	      0	    120	   3345	    d11	rts/BlockAlloc.o
    2877	    536	      0	   3413	    d55	Typeable.o (ex libHSbase-4.6.0.0.a)
@@ -124,17 +64,15 @@ $ size /usr/local/ghc7.6.1/lib/ghc-7.6.1/ghc-prim-0.3.0.0/libHSghc-prim-0.3.0.0.
    3762	    584	      0	   4346	   10fa	ReadPrec.o (ex libHSbase-4.6.0.0.a)
    3857	    536	      0	   4393	   1129	Num.o (ex libHSbase-4.6.0.0.a)
    3965	    488	      0	   4453	   1165	TopHandler.o (ex libHSbase-4.6.0.0.a)
-   5167	      0	      0	   5167	   142f	rts/ffi64.o
    5678	      0	      0	   5678	   162e	rts/HeapStackCheck.o
    5707	      0	      8	   5715	   1653	rts/STM.o
-   6276	      0	     64	   6340	   18c4	rts/Storage.o
+   4849	    488	    440	   5777	   1691	rts/RtsFlags.o
    5479	    864	      0	   6343	   18c7	Encoding.o (ex libHSbase-4.6.0.0.a)
+   6356	      0	     64	   6420	   1914	rts/Storage.o
+   6426	      0	    192	   6618	   19da	rts/Schedule.o
    6291	    704	      0	   6995	   1b53	Latin1.o (ex libHSbase-4.6.0.0.a)
    6101	   1120	      0	   7221	   1c35	Failure.o (ex libHSbase-4.6.0.0.a)
-   7102	      0	    192	   7294	   1c7e	rts/Schedule.o
-   7331	      0	     16	   7347	   1cb3	rts/Interpreter.o
    6956	    408	      0	   7364	   1cc4	Maybe.o (ex libHSbase-4.6.0.0.a)
-   7182	      0	    184	   7366	   1cc6	rts/Stats.o
    8301	    512	      0	   8813	   226d	Storable.o (ex libHSbase-4.6.0.0.a)
    9015	      0	      0	   9015	   2337	rts/Evac.o
    8553	    936	      0	   9489	   2511	IO.o (ex libHSbase-4.6.0.0.a)
@@ -145,7 +83,6 @@ $ size /usr/local/ghc7.6.1/lib/ghc-7.6.1/ghc-prim-0.3.0.0/libHSghc-prim-0.3.0.0.
    9581	    896	      0	  10477	   28ed	Array.o (ex libHSbase-4.6.0.0.a)
    6322	   4680	      0	  11002	   2afa	rts/StgMiscClosures.o
   10592	    840	      0	  11432	   2ca8	Buffer.o (ex libHSbase-4.6.0.0.a)
-  10746	    488	    440	  11674	   2d9a	rts/RtsFlags.o
   12898	      0	      0	  12898	   3262	rts/Scav.o
   12958	    856	      0	  13814	   35f6	Type.o (ex libHSinteger-gmp-0.5.0.0.a)
    5723	      8	   8472	  14203	   377b	rts/GC.o
@@ -160,9 +97,7 @@ $ size /usr/local/ghc7.6.1/lib/ghc-7.6.1/ghc-prim-0.3.0.0/libHSghc-prim-0.3.0.0.
   18915	   3520	      0	  22435	   57a3	Base.o (ex libHSbase-4.6.0.0.a)
   22453	    528	      0	  22981	   59c5	Foreign.o (ex libHSbase-4.6.0.0.a)
   21477	   2344	      0	  23821	   5d0d	ForeignPtr.o (ex libHSbase-4.6.0.0.a)
-  18684	   6896	    200	  25780	   64b4	rts/Linker.o
   24567	   1856	      0	  26423	   6737	ReadP.o (ex libHSbase-4.6.0.0.a)
-  30181	    200	   1160	  31541	   7b35	rts/closures.o
   27519	   4128	      0	  31647	   7b9f	Storable.o (ex libHSbase-4.6.0.0.a)
   25393	   6312	      0	  31705	   7bd9	Char.o (ex libHSbase-4.6.0.0.a)
   31608	    416	      0	  32024	   7d18	rts/AutoApply.o
