@@ -43,6 +43,38 @@ baseパッケージから必須と思われるオブジェクトファイルだ�
 
 FibHs6
 ------
+未定義シンボルをできるかぎり除去した。
+
+$ ldd FibHs
+        linux-vdso.so.1 =>  (0x00007fff813f3000)
+        libc.so.6 => /lib/x86_64-linux-gnu/libc.so.6 (0x00007f7493bd3000)
+        /lib64/ld-linux-x86-64.so.2 (0x00007f7493f64000)
+$ nm FibHs|sort|head -25
+                 U __libc_start_main@@GLIBC_2.2.5
+                 U bsearch@@GLIBC_2.2.5
+                 U calloc@@GLIBC_2.2.5
+                 U free@@GLIBC_2.2.5
+                 U malloc@@GLIBC_2.2.5
+                 U memcpy@@GLIBC_2.2.5
+                 U memmove@@GLIBC_2.2.5
+                 U memset@@GLIBC_2.2.5
+                 U mmap@@GLIBC_2.2.5
+                 U munmap@@GLIBC_2.2.5
+                 U printf@@GLIBC_2.2.5
+                 U puts@@GLIBC_2.2.5
+                 U realloc@@GLIBC_2.2.5
+                 U sprintf@@GLIBC_2.2.5
+                 U strcmp@@GLIBC_2.2.5
+                 U strcpy@@GLIBC_2.2.5
+                 U strlen@@GLIBC_2.2.5
+                 U strrchr@@GLIBC_2.2.5
+                 U usleep@@GLIBC_2.2.5
+                 w _ITM_deregisterTMCloneTable
+                 w _ITM_registerTMCloneTable
+                 w _Jv_RegisterClasses
+                 w __gmon_start__
+00000000004007f8 T _init
+0000000000400950 T main
 
 
 FibHsXXX
