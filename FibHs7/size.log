@@ -1,13 +1,13 @@
-$ size /usr/local/ghc7.6.1/lib/ghc-7.6.1/ghc-prim-0.3.0.0/libHSghc-prim-0.3.0.0.a *.a rts/* | sort -k 4
+$ size *.a rts/* | sort -k 4
       0	      0	      0	      0	      0	Bool.o (ex libHSbase-4.6.0.0.a)
-      0	      0	      0	      0	      0	IntWord64.o (ex /usr/local/ghc7.6.1/lib/ghc-7.6.1/ghc-prim-0.3.0.0/libHSghc-prim-0.3.0.0.a)
+      0	      0	      0	      0	      0	IntWord64.o (ex libHSghc-prim-0.3.0.0.a)
       0	      0	      0	      0	      0	Integer.o (ex libHSinteger-gmp-0.5.0.0.a)
       0	      0	      0	      0	      0	Word.o (ex libHSbase-4.6.0.0.a)
-      0	      0	      0	      0	      0	longlong.o (ex /usr/local/ghc7.6.1/lib/ghc-7.6.1/ghc-prim-0.3.0.0/libHSghc-prim-0.3.0.0.a)
-     32	      8	      0	     40	     28	Magic.o (ex /usr/local/ghc7.6.1/lib/ghc-7.6.1/ghc-prim-0.3.0.0/libHSghc-prim-0.3.0.0.a)
+      0	      0	      0	      0	      0	longlong.o (ex libHSghc-prim-0.3.0.0.a)
+     32	      8	      0	     40	     28	Magic.o (ex libHSghc-prim-0.3.0.0.a)
      98	      8	      0	    106	     6a	Prelude.o (ex libHSbase-4.6.0.0.a)
+    106	      0	      0	    106	     6a	debug.o (ex libHSghc-prim-0.3.0.0.a)
       0	    122	      0	    122	     7a	rts/ClosureFlags.o
-    124	      0	      0	    124	     7c	debug.o (ex /usr/local/ghc7.6.1/lib/ghc-7.6.1/ghc-prim-0.3.0.0/libHSghc-prim-0.3.0.0.a)
     135	      0	      0	    135	     87	rts/StgCRun.o
     157	      0	      0	    157	     9d	rts/HsFFI.o
     275	      0	      0	    275	    113	rts/Sweep.o
@@ -23,8 +23,8 @@ $ size /usr/local/ghc7.6.1/lib/ghc-7.6.1/ghc-prim-0.3.0.0/libHSghc-prim-0.3.0.0.
     669	     48	      0	    717	    2cd	Weak.o (ex libHSbase-4.6.0.0.a)
     724	      0	      8	    732	    2dc	rts/Weak.o
     733	      0	      0	    733	    2dd	rts/WSDeque.o
-    759	      0	      0	    759	    2f7	popcnt.o (ex /usr/local/ghc7.6.1/lib/ghc-7.6.1/ghc-prim-0.3.0.0/libHSghc-prim-0.3.0.0.a)
-    869	     48	      0	    917	    395	Debug.o (ex /usr/local/ghc7.6.1/lib/ghc-7.6.1/ghc-prim-0.3.0.0/libHSghc-prim-0.3.0.0.a)
+    777	      0	      0	    777	    309	popcnt.o (ex libHSghc-prim-0.3.0.0.a)
+    869	     48	      0	    917	    395	Debug.o (ex libHSghc-prim-0.3.0.0.a)
     936	      0	      0	    936	    3a8	rts/GCUtils.o
    text	   data	    bss	    dec	    hex	filename
    1036	      0	     28	   1064	    428	rts/MarkWeak.o
@@ -38,12 +38,12 @@ $ size /usr/local/ghc7.6.1/lib/ghc-7.6.1/ghc-prim-0.3.0.0/libHSghc-prim-0.3.0.0.
    1242	    304	      0	   1546	    60a	Err.o (ex libHSbase-4.6.0.0.a)
    1213	      0	    448	   1661	    67d	rts/Capability.o
    1709	     96	      0	   1805	    70d	IORef.o (ex libHSbase-4.6.0.0.a)
-   1692	    144	      0	   1836	    72c	Types.o (ex /usr/local/ghc7.6.1/lib/ghc-7.6.1/ghc-prim-0.3.0.0/libHSghc-prim-0.3.0.0.a)
+   1692	    144	      0	   1836	    72c	Types.o (ex libHSghc-prim-0.3.0.0.a)
    1604	    344	      0	   1948	    79c	StableName.o (ex libHSbase-4.6.0.0.a)
    1929	      0	     32	   1961	    7a9	rts/Stable.o
    2269	      0	      0	   2269	    8dd	rts/Hash.o
    1945	    344	      0	   2289	    8f1	Weak.o (ex libHSbase-4.6.0.0.a)
-   2395	     40	      0	   2435	    983	CString.o (ex /usr/local/ghc7.6.1/lib/ghc-7.6.1/ghc-prim-0.3.0.0/libHSghc-prim-0.3.0.0.a)
+   2395	     40	      0	   2435	    983	CString.o (ex libHSghc-prim-0.3.0.0.a)
    2531	      0	      0	   2531	    9e3	rts/Apply.o
    2120	    440	      0	   2560	    a00	ST.o (ex libHSbase-4.6.0.0.a)
    2560	    112	      0	   2672	    a70	Fingerprint.o (ex libHSbase-4.6.0.0.a)
@@ -65,6 +65,7 @@ $ size /usr/local/ghc7.6.1/lib/ghc-7.6.1/ghc-prim-0.3.0.0/libHSghc-prim-0.3.0.0.
    3762	    584	      0	   4346	   10fa	ReadPrec.o (ex libHSbase-4.6.0.0.a)
    3857	    536	      0	   4393	   1129	Num.o (ex libHSbase-4.6.0.0.a)
    3965	    488	      0	   4453	   1165	TopHandler.o (ex libHSbase-4.6.0.0.a)
+   4522	    128	      0	   4650	   122a	Tuple.o (ex libHSghc-prim-0.3.0.0.a)
    5678	      0	      0	   5678	   162e	rts/HeapStackCheck.o
    5707	      0	      8	   5715	   1653	rts/STM.o
    4849	    488	    440	   5777	   1691	rts/RtsFlags.o
@@ -92,7 +93,7 @@ $ size /usr/local/ghc7.6.1/lib/ghc-7.6.1/ghc-prim-0.3.0.0/libHSghc-prim-0.3.0.0.
   15847	   2080	      0	  17927	   4607	Exception.o (ex libHSbase-4.6.0.0.a)
   18319	      0	      0	  18319	   478f	rts/Compact.o
   17516	   1848	      0	  19364	   4ba4	Bits.o (ex libHSbase-4.6.0.0.a)
-  16967	   2672	      0	  19639	   4cb7	PrimopWrappers.o (ex /usr/local/ghc7.6.1/lib/ghc-7.6.1/ghc-prim-0.3.0.0/libHSghc-prim-0.3.0.0.a)
+  16961	   2672	      0	  19633	   4cb1	PrimopWrappers.o (ex libHSghc-prim-0.3.0.0.a)
   21082	      0	      0	  21082	   525a	rts/StgStdThunks.o
   20730	   1600	      0	  22330	   573a	List.o (ex libHSbase-4.6.0.0.a)
   18915	   3520	      0	  22435	   57a3	Base.o (ex libHSbase-4.6.0.0.a)
@@ -103,7 +104,6 @@ $ size /usr/local/ghc7.6.1/lib/ghc-7.6.1/ghc-prim-0.3.0.0/libHSghc-prim-0.3.0.0.
   25393	   6312	      0	  31705	   7bd9	Char.o (ex libHSbase-4.6.0.0.a)
   31608	    416	      0	  32024	   7d18	rts/AutoApply.o
    1471	      0	  32808	  34279	   85e7	rts/MBlock.o
-  43081	    504	      0	  43585	   aa41	Tuple.o (ex /usr/local/ghc7.6.1/lib/ghc-7.6.1/ghc-prim-0.3.0.0/libHSghc-prim-0.3.0.0.a)
   43376	   2160	      0	  45536	   b1e0	List.o (ex libHSbase-4.6.0.0.a)
   40198	   7064	      0	  47262	   b89e	Exception.o (ex libHSbase-4.6.0.0.a)
   44386	   4624	      0	  49010	   bf72	Sync.o (ex libHSbase-4.6.0.0.a)
@@ -119,4 +119,4 @@ $ size /usr/local/ghc7.6.1/lib/ghc-7.6.1/ghc-prim-0.3.0.0/libHSghc-prim-0.3.0.0.
  105849	   4584	      0	 110433	  1af61	Arr.o (ex libHSbase-4.6.0.0.a)
  101803	   9984	      0	 111787	  1b4ab	Read.o (ex libHSbase-4.6.0.0.a)
   77137	  42944	      0	 120081	  1d511	Types.o (ex libHSbase-4.6.0.0.a)
- 185257	   3704	      0	 188961	  2e221	Classes.o (ex /usr/local/ghc7.6.1/lib/ghc-7.6.1/ghc-prim-0.3.0.0/libHSghc-prim-0.3.0.0.a)
+ 185257	   3704	      0	 188961	  2e221	Classes.o (ex libHSghc-prim-0.3.0.0.a)
