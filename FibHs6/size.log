@@ -1,3 +1,4 @@
+$ size /usr/local/ghc7.6.1/lib/ghc-7.6.1/ghc-prim-0.3.0.0/libHSghc-prim-0.3.0.0.a *.a rts/* | sort -k 4
       0	      0	      0	      0	      0	Bool.o (ex libHSbase-4.6.0.0.a)
       0	      0	      0	      0	      0	IntWord64.o (ex /usr/local/ghc7.6.1/lib/ghc-7.6.1/ghc-prim-0.3.0.0/libHSghc-prim-0.3.0.0.a)
       0	      0	      0	      0	      0	Integer.o (ex libHSinteger-gmp-0.5.0.0.a)
