@@ -9,9 +9,10 @@
       0	    122	      0	    122	     7a	rts/ClosureFlags.o
     135	      0	      0	    135	     87	rts/StgCRun.o
     157	      0	      0	    157	     9d	rts/HsFFI.o
+    181	     32	      0	    213	     d5	TopHandler.o (ex libHSbase-4.6.0.0.a)
     275	      0	      0	    275	    113	rts/Sweep.o
     317	     16	      0	    333	    14d	Mem.o (ex libHSbase-4.6.0.0.a)
-    366	      0	      0	    366	    16e	rts/RtsStartupSlim.o
+    342	      0	      0	    342	    156	rts/RtsStartupSlim.o
     525	      0	      0	    525	    20d	rts/Updates.o
     552	      0	      0	    552	    228	rts/GCAux.o
     523	      0	     48	    571	    23b	rts/Globals.o
@@ -23,10 +24,12 @@
     724	      0	      8	    732	    2dc	rts/Weak.o
     733	      0	      0	    733	    2dd	rts/WSDeque.o
     777	      0	      0	    777	    309	popcnt.o (ex libHSghc-prim-0.3.0.0.a)
+    669	    224	      0	    893	    37d	Typeable.o (ex libHSbase-4.6.0.0.a)
     869	     48	      0	    917	    395	Debug.o (ex libHSghc-prim-0.3.0.0.a)
     936	      0	      0	    936	    3a8	rts/GCUtils.o
    text	   data	    bss	    dec	    hex	filename
    1036	      0	     28	   1064	    428	rts/MarkWeak.o
+    805	    264	      0	   1069	    42d	Fib.o
    1035	    104	      0	   1139	    473	STRef.o (ex libHSbase-4.6.0.0.a)
    1146	      0	      0	   1146	    47a	rts/Messages.o
    1190	      0	      0	   1190	    4a6	rts/StgStartup.o
@@ -35,9 +38,11 @@
    1344	    120	      0	   1464	    5b8	Stable.o (ex libHSbase-4.6.0.0.a)
    1429	    104	      0	   1533	    5fd	Exception.o (ex libHSbase-4.6.0.0.a)
    1242	    304	      0	   1546	    60a	Err.o (ex libHSbase-4.6.0.0.a)
+   1581	      0	     12	   1593	    639	CMain.o
    1213	      0	    448	   1661	    67d	rts/Capability.o
    1709	     96	      0	   1805	    70d	IORef.o (ex libHSbase-4.6.0.0.a)
    1692	    144	      0	   1836	    72c	Types.o (ex libHSghc-prim-0.3.0.0.a)
+   1582	    280	      0	   1862	    746	Trace.o (ex libHSbase-4.6.0.0.a)
    1604	    344	      0	   1948	    79c	StableName.o (ex libHSbase-4.6.0.0.a)
    1929	      0	     32	   1961	    7a9	rts/Stable.o
    2269	      0	      0	   2269	    8dd	rts/Hash.o
@@ -46,7 +51,6 @@
    2531	      0	      0	   2531	    9e3	rts/Apply.o
    2120	    440	      0	   2560	    a00	ST.o (ex libHSbase-4.6.0.0.a)
    2560	    112	      0	   2672	    a70	Fingerprint.o (ex libHSbase-4.6.0.0.a)
-   2353	    320	      0	   2673	    a71	Trace.o (ex libHSbase-4.6.0.0.a)
    2677	      8	      0	   2685	    a7d	rts/Exception.o
    2628	    208	      0	   2836	    b14	Type.o (ex libHSbase-4.6.0.0.a)
    2903	      0	      0	   2903	    b57	md5.o (ex libHSbase-4.6.0.0.a)
@@ -54,16 +58,13 @@
    2972	    264	      0	   3236	    ca4	Unicode.o (ex libHSbase-4.6.0.0.a)
    3251	      4	      0	   3255	    cb7	rts/Threads.o
    3225	      0	    120	   3345	    d11	rts/BlockAlloc.o
-   2877	    536	      0	   3413	    d55	Typeable.o (ex libHSbase-4.6.0.0.a)
    3540	      0	      0	   3540	    dd4	rts/RtsAPI.o
    3969	      0	      0	   3969	    f81	rts/RaiseAsync.o
    4046	      0	      0	   4046	    fce	rts/Inlines.o
-   3506	    544	      0	   4050	    fd2	Stack.o (ex libHSbase-4.6.0.0.a)
-   3389	    720	      0	   4109	   100d	Alloc.o (ex libHSbase-4.6.0.0.a)
+   3389	    704	      0	   4093	    ffd	Alloc.o (ex libHSbase-4.6.0.0.a)
    3597	    600	      0	   4197	   1065	Types.o (ex libHSbase-4.6.0.0.a)
    3762	    584	      0	   4346	   10fa	ReadPrec.o (ex libHSbase-4.6.0.0.a)
    3857	    536	      0	   4393	   1129	Num.o (ex libHSbase-4.6.0.0.a)
-   3965	    488	      0	   4453	   1165	TopHandler.o (ex libHSbase-4.6.0.0.a)
    4522	    128	      0	   4650	   122a	Tuple.o (ex libHSghc-prim-0.3.0.0.a)
    4561	    872	     60	   5493	   1575	rts/RtsFlags.o
    5678	      0	      0	   5678	   162e	rts/HeapStackCheck.o
@@ -76,39 +77,38 @@
    6956	    408	      0	   7364	   1cc4	Maybe.o (ex libHSbase-4.6.0.0.a)
    8301	    512	      0	   8813	   226d	Storable.o (ex libHSbase-4.6.0.0.a)
    9015	      0	      0	   9015	   2337	rts/Evac.o
+   8349	    752	      0	   9101	   238d	Array.o (ex libHSbase-4.6.0.0.a)
    8553	    936	      0	   9489	   2511	IO.o (ex libHSbase-4.6.0.0.a)
    8730	    760	      0	   9490	   2512	Ptr.o (ex libHSbase-4.6.0.0.a)
    8889	    632	      0	   9521	   2531	Numeric.o (ex libHSbase-4.6.0.0.a)
    8982	    936	      0	   9918	   26be	Base.o (ex libHSbase-4.6.0.0.a)
   10211	      0	      0	  10211	   27e3	rts/PrimOps.o
-   9581	    896	      0	  10477	   28ed	Array.o (ex libHSbase-4.6.0.0.a)
    6322	   4680	      0	  11002	   2afa	rts/StgMiscClosures.o
-  10592	    840	      0	  11432	   2ca8	Buffer.o (ex libHSbase-4.6.0.0.a)
+  10688	    840	      0	  11528	   2d08	Buffer.o (ex libHSbase-4.6.0.0.a)
   12898	      0	      0	  12898	   3262	rts/Scav.o
   12958	    856	      0	  13814	   35f6	Type.o (ex libHSinteger-gmp-0.5.0.0.a)
    5723	      8	   8472	  14203	   377b	rts/GC.o
   14246	   1160	      0	  15406	   3c2e	Either.o (ex libHSbase-4.6.0.0.a)
   15605	    488	      0	  16093	   3edd	Monad.o (ex libHSbase-4.6.0.0.a)
+  15359	   2016	      0	  17375	   43df	Exception.o (ex libHSbase-4.6.0.0.a)
    1471	      0	  16424	  17895	   45e7	rts/MBlock.o
-  15847	   2080	      0	  17927	   4607	Exception.o (ex libHSbase-4.6.0.0.a)
   18319	      0	      0	  18319	   478f	rts/Compact.o
   17516	   1848	      0	  19364	   4ba4	Bits.o (ex libHSbase-4.6.0.0.a)
   16967	   2672	      0	  19639	   4cb7	PrimopWrappers.o (ex libHSghc-prim-0.3.0.0.a)
   21082	      0	      0	  21082	   525a	rts/StgStdThunks.o
+  17683	   3520	      0	  21203	   52d3	Base.o (ex libHSbase-4.6.0.0.a)
   20730	   1600	      0	  22330	   573a	List.o (ex libHSbase-4.6.0.0.a)
-  18915	   3520	      0	  22435	   57a3	Base.o (ex libHSbase-4.6.0.0.a)
-  22453	    528	      0	  22981	   59c5	Foreign.o (ex libHSbase-4.6.0.0.a)
-  21477	   2344	      0	  23821	   5d0d	ForeignPtr.o (ex libHSbase-4.6.0.0.a)
+  22413	    528	      0	  22941	   599d	Foreign.o (ex libHSbase-4.6.0.0.a)
+  21853	   2360	      0	  24213	   5e95	ForeignPtr.o (ex libHSbase-4.6.0.0.a)
   24567	   1856	      0	  26423	   6737	ReadP.o (ex libHSbase-4.6.0.0.a)
   27519	   4128	      0	  31647	   7b9f	Storable.o (ex libHSbase-4.6.0.0.a)
   31608	    416	      0	  32024	   7d18	rts/AutoApply.o
   26897	   6424	      0	  33321	   8229	Char.o (ex libHSbase-4.6.0.0.a)
   35083	   6112	      0	  41195	   a0eb	Show.o (ex libHSbase-4.6.0.0.a)
   43376	   2160	      0	  45536	   b1e0	List.o (ex libHSbase-4.6.0.0.a)
-  40198	   7064	      0	  47262	   b89e	Exception.o (ex libHSbase-4.6.0.0.a)
+  38790	   7064	      0	  45854	   b31e	Exception.o (ex libHSbase-4.6.0.0.a)
   42787	   5008	      0	  47795	   bab3	Enum.o (ex libHSbase-4.6.0.0.a)
-  44386	   4624	      0	  49010	   bf72	Sync.o (ex libHSbase-4.6.0.0.a)
-  45114	  10960	      0	  56074	   db0a	Internal.o (ex libHSbase-4.6.0.0.a)
+  44106	  10496	      0	  54602	   d54a	Internal.o (ex libHSbase-4.6.0.0.a)
   49355	   7392	      0	  56747	   ddab	Read.o (ex libHSbase-4.6.0.0.a)
   61129	   9632	      0	  70761	  11469	Word.o (ex libHSbase-4.6.0.0.a)
   68305	   2528	      0	  70833	  114b1	Classes.o (ex libHSghc-prim-0.3.0.0.a)

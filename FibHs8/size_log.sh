@@ -1,3 +1,3 @@
 #!/bin/sh
-size *.a rts/* | sort -k 4
+size *.o *.a rts/* | sort -k 4
 
