@@ -91,8 +91,8 @@ FibHs8
 ------
 RtsFlagsを静的に初期化。RtsStartupSlim.cから余計な関数を削除。
 baseパッケージでコンパイル対象でないファイルをリポジトリから削除。
-http://www.bucephalus.org/text/Haskell98numbers/Haskell98numbers.html
-の図を見て数関連のクラスを整理。以下の型を削除した。
+[数のクラス階層図](http://www.bucephalus.org/text/Haskell98numbers/Haskell98numbers.html)
+を見て数関連のクラスを整理。以下の型を削除した。
 
 * Complex    v
 * Ratio      v
@@ -102,10 +102,8 @@ http://www.bucephalus.org/text/Haskell98numbers/Haskell98numbers.html
 * RealFrac   v
 * Fractional v
 
-FibHsXXX
---------
-fib関数をreturn 0にしてみて、baseパッケージの何を使っているのか探ってみた。
-Fib.oはbase_GHCziInt_I32zh_static_infoとbase_GHCziTopHandler_runIO_closureを
-使うようだ。
-さらにlibHSbase-4.6.0.0.aで必須のオブジェクトファイルを探してみる。
-このディレクトリのソースは機能未達なので測定対象ではない。
+FibHs9
+------
+CChar,CInt,CSize以外の型をForeign/C/Types.hsから削除。
+size.logでデカいファイルを、激しいAPI変更を共なったとしても、削除をこころみた。
+全体サイズが1MBを切ったので、ここらであきらめか。。。
