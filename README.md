@@ -89,7 +89,18 @@ FibHs7/size.logに最終的なオブジェクトサイズをダンプした。
 
 FibHs8
 ------
+RtsFlagsを静的に初期化。RtsStartupSlim.cから余計な関数を削除。
+baseパッケージでコンパイル対象でないファイルをリポジトリから削除。
+http://www.bucephalus.org/text/Haskell98numbers/Haskell98numbers.html
+の図を見て数関連のクラスを整理。以下の型を削除した。
 
+* Complex    v
+* Ratio      v
+* Rational   v
+* RealFloat  v
+* Floating   v
+* RealFrac   v
+* Fractional v
 
 FibHsXXX
 --------
