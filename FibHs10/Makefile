@@ -26,8 +26,11 @@ ${OBJ_RTS}: ${GHCDIR}/lib/ghc-7.6.1/libHSrts.a
 ${HSLIB}.cmm: ${HSLIB}.hs
 	${GHC} -O2 -ddump-cmm -c $< > $@
 
+test: all
+	./${PROG}
+
 clean:
 	rm -f ${PROG} *.o *.hi *_stub.h *~ *.cmm
 	rm -rf rts
 
-.PHONY: clean
+.PHONY: test clean
