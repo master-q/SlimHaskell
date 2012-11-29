@@ -43,7 +43,7 @@
    1213	      0	    448	   1661	    67d	rts/Capability.o
    1709	     96	      0	   1805	    70d	IORef.o (ex libHSbase-4.6.0.0.a)
    1692	    144	      0	   1836	    72c	Types.o (ex libHSghc-prim-0.3.0.0.a)
-   1585	    280	      0	   1865	    749	Trace.o (ex libHSbase-4.6.0.0.a)
+   1582	    280	      0	   1862	    746	Trace.o (ex libHSbase-4.6.0.0.a)
    1604	    344	      0	   1948	    79c	StableName.o (ex libHSbase-4.6.0.0.a)
    1929	      0	     32	   1961	    7a9	rts/Stable.o
    1728	    248	      0	   1976	    7b8	ST.o (ex libHSbase-4.6.0.0.a)
@@ -81,7 +81,7 @@
    8301	    512	      0	   8813	   226d	Storable.o (ex libHSbase-4.6.0.0.a)
    9015	      0	      0	   9015	   2337	rts/Evac.o
    8478	    616	      0	   9094	   2386	Either.o (ex libHSbase-4.6.0.0.a)
-   8352	    752	      0	   9104	   2390	Array.o (ex libHSbase-4.6.0.0.a)
+   8349	    752	      0	   9101	   238d	Array.o (ex libHSbase-4.6.0.0.a)
    8982	    936	      0	   9918	   26be	Base.o (ex libHSbase-4.6.0.0.a)
   10211	      0	      0	  10211	   27e3	rts/PrimOps.o
    6322	   4680	      0	  11002	   2afa	rts/StgMiscClosures.o
@@ -99,12 +99,12 @@
   16967	   2672	      0	  19639	   4cb7	PrimopWrappers.o (ex libHSghc-prim-0.3.0.0.a)
   21082	      0	      0	  21082	   525a	rts/StgStdThunks.o
   17683	   3520	      0	  21203	   52d3	Base.o (ex libHSbase-4.6.0.0.a)
+  19539	   2544	      0	  22083	   5643	Real.o (ex libHSbase-4.6.0.0.a)
   20730	   1600	      0	  22330	   573a	List.o (ex libHSbase-4.6.0.0.a)
   22413	    528	      0	  22941	   599d	Foreign.o (ex libHSbase-4.6.0.0.a)
   21413	   2224	      0	  23637	   5c55	ForeignPtr.o (ex libHSbase-4.6.0.0.a)
   27519	   4128	      0	  31647	   7b9f	Storable.o (ex libHSbase-4.6.0.0.a)
   31608	    416	      0	  32024	   7d18	rts/AutoApply.o
-  29939	   3384	      0	  33323	   822b	Real.o (ex libHSbase-4.6.0.0.a)
   30875	   5400	      0	  36275	   8db3	Show.o (ex libHSbase-4.6.0.0.a)
   35590	   6584	      0	  42174	   a4be	Exception.o (ex libHSbase-4.6.0.0.a)
   39075	   4456	      0	  43531	   aa0b	Enum.o (ex libHSbase-4.6.0.0.a)
