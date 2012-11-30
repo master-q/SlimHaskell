@@ -88,13 +88,13 @@
    8982	    936	      0	   9918	   26be	Base.o (ex libHSbase-4.6.0.0.a)
   10211	      0	      0	  10211	   27e3	rts/PrimOps.o
    6322	   4680	      0	  11002	   2afa	rts/StgMiscClosures.o
+   9937	   1296	      0	  11233	   2be1	Char.o (ex libHSbase-4.6.0.0.a)
   10562	    832	      0	  11394	   2c82	List.o (ex libHSbase-4.6.0.0.a)
   10688	    840	      0	  11528	   2d08	Buffer.o (ex libHSbase-4.6.0.0.a)
   12898	      0	      0	  12898	   3262	rts/Scav.o
   12958	    856	      0	  13814	   35f6	Type.o (ex libHSinteger-gmp-0.5.0.0.a)
    5723	      8	   8472	  14203	   377b	rts/GC.o
    9792	   5456	      0	  15248	   3b90	Types.o (ex libHSbase-4.6.0.0.a)
-  14113	   1744	      0	  15857	   3df1	Char.o (ex libHSbase-4.6.0.0.a)
   15359	   2016	      0	  17375	   43df	Exception.o (ex libHSbase-4.6.0.0.a)
    1471	      0	  16424	  17895	   45e7	rts/MBlock.o
   18319	      0	      0	  18319	   478f	rts/Compact.o
