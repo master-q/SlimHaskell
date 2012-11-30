@@ -1,3 +1,3 @@
 #!/bin/sh
-size *.o *.a rts/* | sort -k 4
-
+size FibHs > FibHs.size
+size *.o *.a rts/* | sort -k 4 > size.log
