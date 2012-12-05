@@ -80,8 +80,8 @@
    6956	    408	      0	   7364	   1cc4	Maybe.o (ex libHSbase-4.6.0.0.a)
    6986	    392	      0	   7378	   1cd2	Ptr.o (ex libHSbase-4.6.0.0.a)
    6829	    768	      0	   7597	   1dad	ForeignPtr.o (ex libHSbase-4.6.0.0.a)
+   7261	    448	      0	   7709	   1e1d	Storable.o (ex libHSbase-4.6.0.0.a)
    7369	    584	      0	   7953	   1f11	IO.o (ex libHSbase-4.6.0.0.a)
-   8301	    512	      0	   8813	   226d	Storable.o (ex libHSbase-4.6.0.0.a)
    9015	      0	      0	   9015	   2337	rts/Evac.o
    8478	    616	      0	   9094	   2386	Either.o (ex libHSbase-4.6.0.0.a)
    8349	    752	      0	   9101	   238d	Array.o (ex libHSbase-4.6.0.0.a)
@@ -103,12 +103,12 @@
   21082	      0	      0	  21082	   525a	rts/StgStdThunks.o
   17683	   3520	      0	  21203	   52d3	Base.o (ex libHSbase-4.6.0.0.a)
   19539	   2544	      0	  22083	   5643	Real.o (ex libHSbase-4.6.0.0.a)
-  27519	   4128	      0	  31647	   7b9f	Storable.o (ex libHSbase-4.6.0.0.a)
+  24991	   3680	      0	  28671	   6fff	Storable.o (ex libHSbase-4.6.0.0.a)
   31608	    416	      0	  32024	   7d18	rts/AutoApply.o
   30875	   5400	      0	  36275	   8db3	Show.o (ex libHSbase-4.6.0.0.a)
   35590	   6584	      0	  42174	   a4be	Exception.o (ex libHSbase-4.6.0.0.a)
   39075	   4456	      0	  43531	   aa0b	Enum.o (ex libHSbase-4.6.0.0.a)
-  37074	   9328	      0	  46402	   b542	Internal.o (ex libHSbase-4.6.0.0.a)
+  36384	   8928	      0	  45312	   b100	Internal.o (ex libHSbase-4.6.0.0.a)
   49849	   7872	      0	  57721	   e179	Word.o (ex libHSbase-4.6.0.0.a)
   55472	   7952	      0	  63424	   f7c0	Int.o (ex libHSbase-4.6.0.0.a)
   64913	   2160	      0	  67073	  10601	Classes.o (ex libHSghc-prim-0.3.0.0.a)
