@@ -65,3 +65,11 @@ void *saved_termios = NULL;
 void *__hscore_get_saved_termios(int fd) {return saved_termios;}
 void __hscore_set_saved_termios(int fd, void* ts) {saved_termios = ts;}
 void threadPaused(void *cap, void *tso) {}
+void base_GHCziInt_I8zh_con_info(void) {}
+void base_GHCziInt_I16zh_con_info(void) {}
+void base_GHCziInt_I32zh_con_info(void) {}
+void base_GHCziInt_I64zh_con_info(void) {}
+void base_GHCziWord_W8zh_con_info(void) {}
+void base_GHCziWord_W16zh_con_info(void) {}
+void base_GHCziWord_W32zh_con_info(void) {}
+void base_GHCziWord_W64zh_con_info(void) {}
