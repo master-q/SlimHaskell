@@ -42,6 +42,7 @@
    1929	      0	     32	   1961	    7a9	rts/Stable.o
    1728	    248	      0	   1976	    7b8	ST.o (ex libHSbase-4.6.0.0.a)
    2269	      0	      0	   2269	    8dd	rts/Hash.o
+   2097	    184	      0	   2281	    8e9	Num.o (ex libHSbase-4.6.0.0.a)
    2395	     40	      0	   2435	    983	CString.o (ex libHSghc-prim-0.3.0.0.a)
    2531	      0	      0	   2531	    9e3	rts/Apply.o
    2677	      8	      0	   2685	    a7d	rts/Exception.o
@@ -54,22 +55,21 @@
    3969	      0	      0	   3969	    f81	rts/RaiseAsync.o
    4046	      0	      0	   4046	    fce	rts/Inlines.o
    3965	    184	      0	   4149	   1035	Monad.o (ex libHSbase-4.6.0.0.a)
-   3793	    464	      0	   4257	   10a1	Num.o (ex libHSbase-4.6.0.0.a)
    4522	    128	      0	   4650	   122a	Tuple.o (ex libHSghc-prim-0.3.0.0.a)
+   3117	   1704	      0	   4821	   12d5	Types.o (ex libHSbase-4.6.0.0.a)
    4561	    872	     60	   5493	   1575	rts/RtsFlags.o
    5678	      0	      0	   5678	   162e	rts/HeapStackCheck.o
    5707	      0	      8	   5715	   1653	rts/STM.o
-   3933	   1944	      0	   5877	   16f5	Types.o (ex libHSbase-4.6.0.0.a)
    6356	      0	     64	   6420	   1914	rts/Storage.o
    6153	    464	      0	   6617	   19d9	IO.o (ex libHSbase-4.6.0.0.a)
-   6426	      0	    192	   6618	   19da	rts/Schedule.o
+   6586	      0	    192	   6778	   1a7a	rts/Schedule.o
    6956	    408	      0	   7364	   1cc4	Maybe.o (ex libHSbase-4.6.0.0.a)
    6986	    392	      0	   7378	   1cd2	Ptr.o (ex libHSbase-4.6.0.0.a)
    7822	    352	      0	   8174	   1fee	Either.o (ex libHSbase-4.6.0.0.a)
    9015	      0	      0	   9015	   2337	rts/Evac.o
-   9207	    496	      0	   9703	   25e7	Exception.o (ex libHSbase-4.6.0.0.a)
+   9199	    496	      0	   9695	   25df	Exception.o (ex libHSbase-4.6.0.0.a)
    8982	    936	      0	   9918	   26be	Base.o (ex libHSbase-4.6.0.0.a)
-  10211	      0	      0	  10211	   27e3	rts/PrimOps.o
+  10187	      0	      0	  10187	   27cb	rts/PrimOps.o
    9699	   1144	      0	  10843	   2a5b	Base.o (ex libHSbase-4.6.0.0.a)
    6322	   4680	      0	  11002	   2afa	rts/StgMiscClosures.o
   10562	    832	      0	  11394	   2c82	List.o (ex libHSbase-4.6.0.0.a)
