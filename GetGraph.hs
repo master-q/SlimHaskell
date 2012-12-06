@@ -3,9 +3,6 @@ import Data.Char
 import Data.List
 import System.Process
 
-fibhss :: String
-fibhss = "FibHs0/FibHs"
-
 isUndefSym :: String -> Bool
 isUndefSym xs@(x:_) = isSpace x && head (filter isAlpha xs) == 'U'
 isUndefSym _     = False
@@ -32,11 +29,20 @@ nmMe f = do
   nm <- readProcess "nm" [f] ""
   return $ show . length . filter isUndefSym . lines $ nm
 
+mesureMe :: String -> IO String
+mesureMe f = fmap concat (sequence [return f,
+                                    return ", ",
+                                    sizeMe f,
+                                    return ", ",
+                                    lddMe f,
+                                    return ", ",
+                                    nmMe f,
+                                    return "\n"])
+
 main :: IO ()
 main = do
   -- get file paths
   files <- readProcess "find" [".", "-name", "FibHs"] ""
-  print $ sortBy numSort . lines $ files
-  putStrLn =<< sizeMe fibhss
-  putStrLn =<< lddMe fibhss
-  putStrLn =<< nmMe fibhss
+  let files' = sortBy numSort . lines $ files
+  putStrLn "name, size, ldd, nm"
+  putStr =<< fmap concat (mapM mesureMe files')
