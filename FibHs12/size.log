@@ -5,6 +5,7 @@
      32	      8	      0	     40	     28	TopHandler.o (ex libHSbase-4.6.0.0.a)
      98	      8	      0	    106	     6a	Prelude.o (ex libHSbase-4.6.0.0.a)
     106	      0	      0	    106	     6a	debug.o (ex libHSghc-prim-0.3.0.0.a)
+     94	     24	      0	    118	     76	Err.o (ex libHSbase-4.6.0.0.a)
       0	    122	      0	    122	     7a	rts/ClosureFlags.o
     135	      0	      0	    135	     87	rts/StgCRun.o
     157	      0	      0	    157	     9d	rts/HsFFI.o
@@ -34,9 +35,9 @@
    1146	      0	      0	   1146	    47a	rts/Messages.o
    1190	      0	      0	   1190	    4a6	rts/StgStartup.o
    1109	     96	      0	   1205	    4b5	Exception.o (ex libHSbase-4.6.0.0.a)
+   1123	    152	      0	   1275	    4fb	Exception.o (ex libHSbase-4.6.0.0.a)
    1252	      0	     36	   1288	    508	rts/Task.o
    1344	    120	      0	   1464	    5b8	Stable.o (ex libHSbase-4.6.0.0.a)
-   1242	    304	      0	   1546	    60a	Err.o (ex libHSbase-4.6.0.0.a)
    1213	      0	    448	   1661	    67d	rts/Capability.o
    1692	    144	      0	   1836	    72c	Types.o (ex libHSghc-prim-0.3.0.0.a)
    1869	      0	     12	   1881	    759	CMain.o
@@ -68,7 +69,6 @@
    6986	    392	      0	   7378	   1cd2	Ptr.o (ex libHSbase-4.6.0.0.a)
    7822	    352	      0	   8174	   1fee	Either.o (ex libHSbase-4.6.0.0.a)
    9015	      0	      0	   9015	   2337	rts/Evac.o
-   9199	    496	      0	   9695	   25df	Exception.o (ex libHSbase-4.6.0.0.a)
    8974	    936	      0	   9910	   26b6	Base.o (ex libHSbase-4.6.0.0.a)
   10187	      0	      0	  10187	   27cb	rts/PrimOps.o
    6322	   4680	      0	  11002	   2afa	rts/StgMiscClosures.o
