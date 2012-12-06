@@ -73,9 +73,9 @@
    9207	    496	      0	   9703	   25e7	Exception.o (ex libHSbase-4.6.0.0.a)
    8982	    936	      0	   9918	   26be	Base.o (ex libHSbase-4.6.0.0.a)
   10211	      0	      0	  10211	   27e3	rts/PrimOps.o
+   9699	   1144	      0	  10843	   2a5b	Base.o (ex libHSbase-4.6.0.0.a)
    6322	   4680	      0	  11002	   2afa	rts/StgMiscClosures.o
   10562	    832	      0	  11394	   2c82	List.o (ex libHSbase-4.6.0.0.a)
-  10603	   1176	      0	  11779	   2e03	Base.o (ex libHSbase-4.6.0.0.a)
   12898	      0	      0	  12898	   3262	rts/Scav.o
    5723	      8	   8472	  14203	   377b	rts/GC.o
    1471	      0	  16424	  17895	   45e7	rts/MBlock.o
