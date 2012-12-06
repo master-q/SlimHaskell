@@ -73,3 +73,4 @@ void base_GHCziWord_W8zh_con_info(void) {}
 void base_GHCziWord_W16zh_con_info(void) {}
 void base_GHCziWord_W32zh_con_info(void) {}
 void base_GHCziWord_W64zh_con_info(void) {}
+int base_GHCziPack_unpackCString_closure;
