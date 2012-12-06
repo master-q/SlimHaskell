@@ -1,7 +1,6 @@
    text    data     bss     dec     hex filename
-  10562     832       0   11394    2c82 dist/build/GHC/List.o
-   8974     936       0    9910    26b6 dist/build/GHC/Base.o
-   6986     392       0    7378    1cd2 dist/build/GHC/Ptr.o
+   5666     400       0    6066    17b2 dist/build/GHC/List.o
+   3148     416       0    3564     dec dist/build/GHC/Base.o
    2097     184       0    2281     8e9 dist/build/GHC/Num.o
    1344     120       0    1464     5b8 dist/build/GHC/Stable.o
    1041      80       0    1121     461 dist/build/GHC/Weak.o
