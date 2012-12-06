@@ -8,16 +8,15 @@
       0	    122	      0	    122	     7a	rts/ClosureFlags.o
     135	      0	      0	    135	     87	rts/StgCRun.o
     157	      0	      0	    157	     9d	rts/HsFFI.o
+    235	      0	      0	    235	     eb	rts/RtsStartupSlim.o
     275	      0	      0	    275	    113	rts/Sweep.o
     317	     16	      0	    333	    14d	Mem.o (ex libHSbase-4.6.0.0.a)
-    334	      0	      0	    334	    14e	rts/RtsStartupSlim.o
     525	      0	      0	    525	    20d	rts/Updates.o
     552	      0	      0	    552	    228	rts/GCAux.o
     523	      0	     48	    571	    23b	rts/Globals.o
     525	     48	      0	    573	    23d	Weak.o (ex libHSbase-4.6.0.0.a)
     599	      0	      0	    599	    257	rts/Adjustor.o
     514	    104	      0	    618	    26a	Char.o (ex libHSbase-4.6.0.0.a)
-    600	     96	      0	    696	    2b8	IORef.o (ex libHSbase-4.6.0.0.a)
     695	      0	      8	    703	    2bf	rts/OSMem.o
     724	      0	      8	    732	    2dc	rts/Weak.o
     733	      0	      0	    733	    2dd	rts/WSDeque.o
@@ -35,11 +34,9 @@
    1190	      0	      0	   1190	    4a6	rts/StgStartup.o
    1109	     96	      0	   1205	    4b5	Exception.o (ex libHSbase-4.6.0.0.a)
    1252	      0	     36	   1288	    508	rts/Task.o
-   1253	     56	      0	   1309	    51d	Pack.o (ex libHSbase-4.6.0.0.a)
    1344	    120	      0	   1464	    5b8	Stable.o (ex libHSbase-4.6.0.0.a)
    1242	    304	      0	   1546	    60a	Err.o (ex libHSbase-4.6.0.0.a)
    1213	      0	    448	   1661	    67d	rts/Capability.o
-   1709	     96	      0	   1805	    70d	IORef.o (ex libHSbase-4.6.0.0.a)
    1692	    144	      0	   1836	    72c	Types.o (ex libHSghc-prim-0.3.0.0.a)
    1869	      0	     12	   1881	    759	CMain.o
    1929	      0	     32	   1961	    7a9	rts/Stable.o
@@ -64,8 +61,8 @@
    5707	      0	      8	   5715	   1653	rts/STM.o
    3933	   1944	      0	   5877	   16f5	Types.o (ex libHSbase-4.6.0.0.a)
    6356	      0	     64	   6420	   1914	rts/Storage.o
+   6153	    464	      0	   6617	   19d9	IO.o (ex libHSbase-4.6.0.0.a)
    6426	      0	    192	   6618	   19da	rts/Schedule.o
-   6521	    528	      0	   7049	   1b89	IO.o (ex libHSbase-4.6.0.0.a)
    6956	    408	      0	   7364	   1cc4	Maybe.o (ex libHSbase-4.6.0.0.a)
    6986	    392	      0	   7378	   1cd2	Ptr.o (ex libHSbase-4.6.0.0.a)
    7822	    352	      0	   8174	   1fee	Either.o (ex libHSbase-4.6.0.0.a)
