@@ -2,6 +2,10 @@
 import Data.Char
 import Data.List
 import System.Process
+import Graphics.Rendering.Chart
+import Data.Colour
+import Data.Colour.Names
+import Data.Accessor
 
 isUndefSym :: String -> Bool
 isUndefSym xs@(x:_) = isSpace x && head (filter isAlpha xs) == 'U'
@@ -14,35 +18,47 @@ numSort a b = a' `compare` b'
     a' = read $ filter isDigit a
     b' = read $ filter isDigit b
 
-sizeMe :: String -> IO String
+sizeMe :: String -> IO Double
 sizeMe f = do
   size <- readProcess "size" [f] ""
-  return $ (map words . lines $ size) !! 1 !! 3
+  return . read $ (map words . lines $ size) !! 1 !! 3
 
-lddMe :: String -> IO String
+lddMe :: String -> IO Double
 lddMe f = do
   ldd <- readProcess "ldd" [f] ""
-  return $ show . length . lines $ ldd
+  return . read $ show . length . lines $ ldd
 
-nmMe :: String -> IO String
+nmMe :: String -> IO Double
 nmMe f = do
   nm <- readProcess "nm" [f] ""
-  return $ show . length . filter isUndefSym . lines $ nm
+  return . read $ show . length . filter isUndefSym . lines $ nm
 
-mesureMe :: String -> IO String
-mesureMe f = fmap concat (sequence [return f,
-                                    return ", ",
-                                    sizeMe f,
-                                    return ", ",
-                                    lddMe f,
-                                    return ", ",
-                                    nmMe f,
-                                    return "\n"])
+chart :: [(Int, Double)] -> Renderable ()
+chart dat = toRenderable layout
+  where
+    lineStyle col = line_width ^= 2
+                    $ line_color ^= col
+                    $ defaultPlotLines ^. plot_lines_style
+    plot1 = plot_lines_style ^= lineStyle (opaque blue)
+            $ plot_lines_values ^= [dat]
+            $ plot_lines_title ^= "size"
+            $ defaultPlotLines
+    bg = opaque white
+    fg = opaque black
+    layout = layout1_title ^="size/ldd/nm"
+           $ layout1_background ^= solidFillStyle bg
+ 	   $ layout1_plots ^= [Left (toPlot plot1)]
+           $ setLayout1Foreground fg
+           $ defaultLayout1
+
+addIndex :: [a] -> [(Int, a)]
+addIndex = zip [0..]
 
 main :: IO ()
 main = do
   -- get file paths
   files <- readProcess "find" [".", "-name", "FibHs"] ""
   let files' = sortBy numSort . lines $ files
-  putStrLn "name, size, ldd, nm"
-  putStr =<< fmap concat (mapM mesureMe files')
+  -- draw graph
+  sizes <- fmap addIndex . mapM sizeMe $ files'
+  renderableToPSFile (chart sizes) 800 600 "output_graph.ps"
