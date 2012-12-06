@@ -33,26 +33,44 @@ nmMe f = do
   nm <- readProcess "nm" [f] ""
   return . read $ show . length . filter isUndefSym . lines $ nm
 
-chart :: [(Int, Double)] -> Renderable ()
-chart dat = toRenderable layout
+type Format = [(Int, Double)]
+
+chart :: [Format] -> Renderable ()
+chart [sizes, ldds, nms] = toRenderable layout
   where
     lineStyle col = line_width ^= 2
                     $ line_color ^= col
                     $ defaultPlotLines ^. plot_lines_style
     plot1 = plot_lines_style ^= lineStyle (opaque blue)
-            $ plot_lines_values ^= [dat]
+            $ plot_lines_values ^= [sizes]
             $ plot_lines_title ^= "size"
+            $ defaultPlotLines
+    plot2 = plot_lines_style ^= lineStyle (opaque red)
+            $ plot_lines_values ^= [ldds]
+            $ plot_lines_title ^= "ldd"
+            $ defaultPlotLines
+    plot3 = plot_lines_style ^= lineStyle (opaque green)
+            $ plot_lines_values ^= [nms]
+            $ plot_lines_title ^= "nm"
             $ defaultPlotLines
     bg = opaque white
     fg = opaque black
     layout = layout1_title ^="size/ldd/nm"
-           $ layout1_background ^= solidFillStyle bg
- 	   $ layout1_plots ^= [Left (toPlot plot1)]
-           $ setLayout1Foreground fg
-           $ defaultLayout1
+             $ layout1_background ^= solidFillStyle bg
+             $ layout1_plots ^= [Left (toPlot plot1),
+                                 Left (toPlot plot2),
+                                 Left (toPlot plot3)]
+             $ setLayout1Foreground fg
+             $ defaultLayout1
+chart _ = error "Chart should get [a, b, c]."
 
-addIndex :: [a] -> [(Int, a)]
+addIndex :: [Double] -> Format
 addIndex = zip [0..]
+
+dumpData :: [String] -> IO [Format]
+dumpData files = mapM appl [sizeMe, lddMe, nmMe]
+  where
+    appl f = fmap addIndex . mapM f $ files
 
 main :: IO ()
 main = do
@@ -60,5 +78,5 @@ main = do
   files <- readProcess "find" [".", "-name", "FibHs"] ""
   let files' = sortBy numSort . lines $ files
   -- draw graph
-  sizes <- fmap addIndex . mapM sizeMe $ files'
-  renderableToPSFile (chart sizes) 800 600 "output_graph.ps"
+  dats <- dumpData files'
+  renderableToPSFile (chart dats) 800 600 "output_graph.ps"
