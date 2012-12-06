@@ -2,15 +2,15 @@
       0	      0	      0	      0	      0	IntWord64.o (ex libHSghc-prim-0.3.0.0.a)
       0	      0	      0	      0	      0	longlong.o (ex libHSghc-prim-0.3.0.0.a)
      32	      8	      0	     40	     28	Magic.o (ex libHSghc-prim-0.3.0.0.a)
+     32	      8	      0	     40	     28	TopHandler.o (ex libHSbase-4.6.0.0.a)
      98	      8	      0	    106	     6a	Prelude.o (ex libHSbase-4.6.0.0.a)
     106	      0	      0	    106	     6a	debug.o (ex libHSghc-prim-0.3.0.0.a)
       0	    122	      0	    122	     7a	rts/ClosureFlags.o
     135	      0	      0	    135	     87	rts/StgCRun.o
     157	      0	      0	    157	     9d	rts/HsFFI.o
-    181	     32	      0	    213	     d5	TopHandler.o (ex libHSbase-4.6.0.0.a)
     275	      0	      0	    275	    113	rts/Sweep.o
     317	     16	      0	    333	    14d	Mem.o (ex libHSbase-4.6.0.0.a)
-    342	      0	      0	    342	    156	rts/RtsStartupSlim.o
+    334	      0	      0	    334	    14e	rts/RtsStartupSlim.o
     525	      0	      0	    525	    20d	rts/Updates.o
     552	      0	      0	    552	    228	rts/GCAux.o
     523	      0	     48	    571	    23b	rts/Globals.o
