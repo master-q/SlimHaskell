@@ -1,0 +1,10 @@
+   text    data     bss     dec     hex filename
+  10562     832       0   11394    2c82 dist/build/GHC/List.o
+   8974     936       0    9910    26b6 dist/build/GHC/Base.o
+   6986     392       0    7378    1cd2 dist/build/GHC/Ptr.o
+   2097     184       0    2281     8e9 dist/build/GHC/Num.o
+   1344     120       0    1464     5b8 dist/build/GHC/Stable.o
+   1041      80       0    1121     461 dist/build/GHC/Weak.o
+   1123     152       0    1275     4fb dist/build/GHC/Exception.o
+    538     136       0     674     2a2 dist/build/GHC/IO/Exception.o
+     94      24       0     118      76 dist/build/GHC/Err.o
