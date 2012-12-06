@@ -38,39 +38,44 @@ type Format = [(Int, Double)]
 chart :: [Format] -> Renderable ()
 chart [sizes, ldds, nms] = toRenderable layout
   where
-    lineStyle col = line_width ^= 2
-                    $ line_color ^= col
-                    $ defaultPlotLines ^. plot_lines_style
-    plot1 = plot_lines_style ^= lineStyle (opaque blue)
+    lineStyle col dash = line_width ^= 2
+                         $ line_color ^= col
+                         $ line_dashes ^= dash
+                         $ defaultPlotLines ^. plot_lines_style
+    plot1 = plot_lines_style ^= lineStyle (opaque lightgray) []
             $ plot_lines_values ^= [sizes]
-            $ plot_lines_title ^= "size"
+            $ plot_lines_title ^= "Size"
             $ defaultPlotLines
-    plot2 = plot_lines_style ^= lineStyle (opaque red)
+    plot2 = plot_lines_style ^= lineStyle (opaque gray) []
             $ plot_lines_values ^= [ldds]
-            $ plot_lines_title ^= "ldd"
+            $ plot_lines_title ^= "Shared libs"
             $ defaultPlotLines
-    plot3 = plot_lines_style ^= lineStyle (opaque green)
+    plot3 = plot_lines_style ^= lineStyle (opaque black) []
             $ plot_lines_values ^= [nms]
-            $ plot_lines_title ^= "nm"
+            $ plot_lines_title ^= "Undefined symbols"
             $ defaultPlotLines
     bg = opaque white
     fg = opaque black
-    layout = layout1_title ^="size/ldd/nm"
+    layout = layout1_title ^="Size / Shared libs / Undefined symbols"
              $ layout1_background ^= solidFillStyle bg
              $ layout1_plots ^= [Left (toPlot plot1),
                                  Left (toPlot plot2),
                                  Left (toPlot plot3)]
              $ setLayout1Foreground fg
              $ defaultLayout1
-chart _ = error "Chart should get [a, b, c]."
+chart _ = error "chart should get [a, b, c]."
 
 addIndex :: [Double] -> Format
 addIndex = zip [0..]
 
+normalize :: [Double] -> [Double]
+normalize (x:xs) = 1 : fmap (/ x) xs
+normalize _ = error "normalize get empty list."
+
 dumpData :: [String] -> IO [Format]
 dumpData files = mapM appl [sizeMe, lddMe, nmMe]
   where
-    appl f = fmap addIndex . mapM f $ files
+    appl f = fmap addIndex . fmap normalize . mapM f $ files
 
 main :: IO ()
 main = do
@@ -79,4 +84,4 @@ main = do
   let files' = sortBy numSort . lines $ files
   -- draw graph
   dats <- dumpData files'
-  renderableToPSFile (chart dats) 800 600 "output_graph.ps"
+  renderableToPSFile (chart dats) 800 600 "size_graph.ps"
