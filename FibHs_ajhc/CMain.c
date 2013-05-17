@@ -1,8 +1,6 @@
 #include <stdio.h>
-#include "HsFFI.h"
-#ifdef __GLASGOW_HASKELL__
-#include "Fib_stub.h"
-#endif
+#include "tmp/HsFFI.h"
+extern int fib(int);
 
 int main(int argc, char *argv[])
 {
